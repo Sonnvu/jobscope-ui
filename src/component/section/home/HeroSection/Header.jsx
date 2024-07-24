@@ -1,5 +1,4 @@
 import logo from "./logoBlue.png"
-import {useState} from "react";
 import {Bars3Icon} from'@heroicons/react/24/outline'
 
 const navigation = [
@@ -8,7 +7,7 @@ const navigation = [
     { name: 'Dashboard', href: '#'},
 ]
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
         <div>
@@ -24,7 +23,7 @@ export default function Header() {
                     <div className="flex lg:hidden">
                         <button
                             type="button"
-                            onClick={() => setMobileMenuOpen(true)}
+                            // onClick={() => setMobileMenuOpen(true)}
                             className="-m-2.5 inline-flex items-center justify-center rounded-md p-5 text-gray-700"
                         >
                             <span className="sr-only">Open main menu</span>
@@ -40,10 +39,10 @@ export default function Header() {
                         ))}
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end space-x-1">
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-700 p-2 rounded-md hover:underline">
+                        <a href="/SignUp" className="text-sm font-semibold leading-6 text-gray-700 p-2 rounded-md hover:underline">
                             Sign up
                         </a>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-700 align-middle p-2 hover:underline">
+                        <a href="/LogIn" className="text-sm font-semibold leading-6 text-gray-700 align-middle p-2 hover:underline">
                             Log in <span aria-hidden="true">&rarr;</span>
                         </a>
                     </div>
