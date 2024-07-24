@@ -17,3 +17,4 @@ export default function TextLoop({TEXTS}) {
         </text>
     )
 }
+// comment here
